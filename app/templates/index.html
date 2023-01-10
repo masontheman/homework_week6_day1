@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <nav class="flex justify-between pl-3 pr-3 bg-red-700 p-1">
+    {% for x,y in fff.items() %}
+    <h1 class="border bg-blue-500"><a href="{{y}}" class="text-white m-1">{{x}}</a></h1>
+    {% endfor %}
+    </nav>
+    <div class="flex max-w-full justify-between">
+        {%for a in i%}
+            <img src="{{a}}" alt="" class="max-w-[182px] max-h-52 p-5">
+        {% endfor %}
+    </div>
+    <a href="{{link}}"><h1 class="text-red-700 text-center">Back To Home Page</h1></a>
+</body>
+</html>
